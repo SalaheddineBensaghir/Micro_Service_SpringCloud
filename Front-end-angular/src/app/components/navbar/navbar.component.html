@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <!-- Application Title -->
+    <a class="navbar-brand" href="#">MyApp</a>
+
+    <!-- Toggle button for mobile view -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+<!--        <li >-->
+          <button class="btn btn-success" routerLink="/customers">Customers</button>
+<!--        </li>-->
+        <button class="btn btn-success" routerLink="/products">Products</button>
+        <li >
+        <button class="btn btn-success" >Bills</button></li>
+      </ul>
+
+      <!-- Logout/Login Button -->
+      <div>
+        <button class="btn btn-outline-light me-2" (click)="login()">
+          Login
+        </button>
+        <button class="btn btn-outline-light" (click)="logout()">
+          Logout
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
